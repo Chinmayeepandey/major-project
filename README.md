@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# 🛒 Pandey's Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Pandey's Store**, a fully functional full-stack platform offering a wide range of branded **Watches**, **Clothes**, **Electronic Devices**, and more. Built with the powerful **MERN Stack**, it delivers a seamless shopping experience, email notifications after purchase,and daily updates on sale offers on your email with integrated location mapping.
 
-## Available Scripts
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🛍️ Browse branded products across multiple categories
+- 🔐 Secure Authentication using `Passport.js` and `JWT`
+- 🧾 Email confirmation after checkout using **AWS SES**
+- 📍 Map-based delivery location using **Mapbox**
+- 🖼️ Image uploads with **Cloudinary**
+- 📦 Add to cart, checkout, and order tracking
+- 📊 Admin dashboard for product and order management
+- 📱 Responsive design for all devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧱 Tech Stack
 
-### `npm test`
+### Frontend
+- React.js
+- Redux Toolkit
+- TailwindCSS
+- Axios
+- Mapbox GL JS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- Node.js
+- Express.js
+- MongoDB + Mongoose
 
-### `npm run build`
+### Auth & Security
+- Passport.js (Local Strategy)
+- JWT-based Authentication
+- bcrypt for password hashing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cloud & Media
+- AWS SES (Email Service)
+- Cloudinary (Image Hosting)
+- Mapbox (Geolocation & Maps)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Installation
 
-### `npm run eject`
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/pandeys-store.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Install client & server dependencies
+cd pandeys-store/client
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+cd ../server
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Create .env files in both /client and /server
+# Example for /server/.env:
+# MONGO_URI=your_mongodb_uri
+# CLOUDINARY_API_KEY=your_cloudinary_key
+# AWS_SES_KEY=your_ses_key
+# MAPBOX_TOKEN=your_mapbox_token
+# JWT_SECRET=your_jwt_secret
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Run the app
+npm run dev   # Runs both frontend and backend (use concurrently)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
